@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 32.775 s <<< FAILURE! - in Runner.TestRunner
+Reproducir contenido  Time elapsed: 4.398 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Reproducir video en pantalla completa  Time elapsed: 3.042 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Reproducir video completo  Time elapsed: 3.05 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Reproducir contenido de la lista  Time elapsed: 3.036 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Silenciar el reproductor  Time elapsed: 3.047 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Seleccionar subtitiulos  Time elapsed: 3.039 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Seleccionar Audio Descriptivo  Time elapsed: 3.023 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Seleccionar modo PIP  Time elapsed: 3.053 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Volver a reproducir el video  Time elapsed: 3.027 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+
+Seleccionar chapters  Time elapsed: 3.016 s  <<< FAILURE!
+org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+

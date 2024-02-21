@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner.TestRunner" time="32.775" tests="10" errors="0" skipped="0" failures="10">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/test-classes:/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/classes:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-java/7.8.1/cucumber-java-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-core/7.8.1/cucumber-core-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-gherkin/7.8.1/cucumber-gherkin-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.8.1/cucumber-gherkin-messages-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/messages/19.1.4/messages-19.1.4.jar:/home/ygriegasb/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/datatable/7.8.1/datatable-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-plugin/7.8.1/cucumber-plugin-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/docstring/7.8.1/docstring-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/html-formatter/20.1.0/html-formatter-20.1.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/home/ygriegasb/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-junit/7.8.1/cucumber-junit-7.8.1.jar:/home/ygriegasb/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/ygriegasb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-java/4.7.1/selenium-java-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.1/selenium-api-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.1/selenium-chrome-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/ygriegasb/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/ygriegasb/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/ygriegasb/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/ygriegasb/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ygriegasb/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ygriegasb/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ygriegasb/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/ygriegasb/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/ygriegasb/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.1/selenium-chromium-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.1/selenium-json-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.7.1/selenium-devtools-v106-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.7.1/selenium-devtools-v107-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.7.1/selenium-devtools-v108-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.1/selenium-devtools-v85-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.1/selenium-edge-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.1/selenium-firefox-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.1/selenium-http-4.7.1.jar:/home/ygriegasb/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.7.1/selenium-ie-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.1/selenium-remote-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/ygriegasb/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/ygriegasb/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/home/ygriegasb/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/ygriegasb/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/ygriegasb/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/ygriegasb/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/ygriegasb/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/ygriegasb/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.1/selenium-manager-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.7.1/selenium-safari-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.1/selenium-support-4.7.1.jar:/home/ygriegasb/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/ygriegasb/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/ygriegasb/.m2/repository/org/jacoco/jacoco-maven-plugin/0.8.8/jacoco-maven-plugin-0.8.8.jar:/home/ygriegasb/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar:/home/ygriegasb/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar:/home/ygriegasb/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar:/home/ygriegasb/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar:/home/ygriegasb/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/home/ygriegasb/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar:/home/ygriegasb/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar:/home/ygriegasb/.m2/repository/org/jacoco/org.jacoco.core/0.8.8/org.jacoco.core-0.8.8.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar:/home/ygriegasb/.m2/repository/org/jacoco/org.jacoco.report/0.8.8/org.jacoco.report-0.8.8.jar:/home/ygriegasb/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/home/ygriegasb/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/ygriegasb/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/ygriegasb/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/ygriegasb/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/ygriegasb/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/home/ygriegasb/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/home/ygriegasb/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/home/ygriegasb/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/home/ygriegasb/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/home/ygriegasb/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/ygriegasb/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/ygriegasb/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/ygriegasb/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/ygriegasb/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/ygriegasb/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/ygriegasb/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/ygriegasb/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/ygriegasb/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/ygriegasb/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/ygriegasb/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/ygriegasb/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/home/ygriegasb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/ygriegasb/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ygriegasb/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/ygriegasb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/ygriegasb/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/home/ygriegasb/.m2/repository/org/junit/vintage/junit-vintage-engine/5.9.2/junit-vintage-engine-5.9.2.jar:/home/ygriegasb/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar:/home/ygriegasb/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar:/home/ygriegasb/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/opt/jdk-11.0.21/lib"/>
+    <property name="sun.java.command" value="/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/surefire/surefirebooter10065346962699893055.jar /home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/surefire 2024-02-21T15-18-02_987-jvmRun1 surefire17977356205013204126tmp surefire_012202608803410061377tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/test-classes:/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/classes:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-java/7.8.1/cucumber-java-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-core/7.8.1/cucumber-core-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-gherkin/7.8.1/cucumber-gherkin-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.8.1/cucumber-gherkin-messages-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/gherkin/24.0.0/gherkin-24.0.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/messages/19.1.4/messages-19.1.4.jar:/home/ygriegasb/.m2/repository/io/cucumber/tag-expressions/4.1.0/tag-expressions-4.1.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-expressions/16.0.0/cucumber-expressions-16.0.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/datatable/7.8.1/datatable-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-plugin/7.8.1/cucumber-plugin-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/docstring/7.8.1/docstring-7.8.1.jar:/home/ygriegasb/.m2/repository/io/cucumber/html-formatter/20.1.0/html-formatter-20.1.0.jar:/home/ygriegasb/.m2/repository/io/cucumber/ci-environment/9.1.0/ci-environment-9.1.0.jar:/home/ygriegasb/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/ygriegasb/.m2/repository/io/cucumber/cucumber-junit/7.8.1/cucumber-junit-7.8.1.jar:/home/ygriegasb/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/ygriegasb/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-java/4.7.1/selenium-java-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-api/4.7.1/selenium-api-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.7.1/selenium-chrome-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/home/ygriegasb/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/home/ygriegasb/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/home/ygriegasb/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/ygriegasb/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/ygriegasb/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/ygriegasb/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/ygriegasb/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/home/ygriegasb/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/home/ygriegasb/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.7.1/selenium-chromium-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-json/4.7.1/selenium-json-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v106/4.7.1/selenium-devtools-v106-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v107/4.7.1/selenium-devtools-v107-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v108/4.7.1/selenium-devtools-v108-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.7.1/selenium-devtools-v85-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.7.1/selenium-edge-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.7.1/selenium-firefox-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-http/4.7.1/selenium-http-4.7.1.jar:/home/ygriegasb/.m2/repository/dev/failsafe/failsafe/3.3.0/failsafe-3.3.0.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.7.1/selenium-ie-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.7.1/selenium-remote-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/ygriegasb/.m2/repository/io/netty/netty-buffer/4.1.84.Final/netty-buffer-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-codec-http/4.1.84.Final/netty-codec-http-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-codec/4.1.84.Final/netty-codec-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-handler/4.1.84.Final/netty-handler-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-common/4.1.84.Final/netty-common-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.84.Final/netty-transport-classes-epoll-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.84.Final/netty-transport-classes-kqueue-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-epoll/4.1.84.Final/netty-transport-native-epoll-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.84.Final/netty-transport-native-kqueue-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.84.Final/netty-transport-native-unix-common-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport/4.1.84.Final/netty-transport-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-resolver/4.1.84.Final/netty-resolver-4.1.84.Final.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-api/1.19.0/opentelemetry-api-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-context/1.19.0/opentelemetry-context-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.19.0/opentelemetry-exporter-logging-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.19.0/opentelemetry-sdk-metrics-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.19.0-alpha/opentelemetry-sdk-logs-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.19.0-alpha/opentelemetry-api-logs-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.19.0/opentelemetry-sdk-common-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.19.0/opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.19.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-exporter-common/1.19.0/opentelemetry-exporter-common-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.19.0/opentelemetry-sdk-trace-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.19.0/opentelemetry-sdk-1.19.0.jar:/home/ygriegasb/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.19.0-alpha/opentelemetry-semconv-1.19.0-alpha.jar:/home/ygriegasb/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/home/ygriegasb/.m2/repository/net/bytebuddy/byte-buddy/1.12.18/byte-buddy-1.12.18.jar:/home/ygriegasb/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/home/ygriegasb/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/home/ygriegasb/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/home/ygriegasb/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/home/ygriegasb/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/home/ygriegasb/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/home/ygriegasb/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.7.1/selenium-manager-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.7.1/selenium-safari-driver-4.7.1.jar:/home/ygriegasb/.m2/repository/org/seleniumhq/selenium/selenium-support/4.7.1/selenium-support-4.7.1.jar:/home/ygriegasb/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/ygriegasb/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/home/ygriegasb/.m2/repository/org/jacoco/jacoco-maven-plugin/0.8.8/jacoco-maven-plugin-0.8.8.jar:/home/ygriegasb/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar:/home/ygriegasb/.m2/repository/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar:/home/ygriegasb/.m2/repository/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-artifact/2.0.2/maven-artifact-2.0.2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-artifact-manager/2.0.2/maven-artifact-manager-2.0.2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/maven-repository-metadata/2.0.2/maven-repository-metadata-2.0.2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar:/home/ygriegasb/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.jar:/home/ygriegasb/.m2/repository/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.jar:/home/ygriegasb/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar:/home/ygriegasb/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.0/doxia-sink-api-1.0.jar:/home/ygriegasb/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar:/home/ygriegasb/.m2/repository/org/jacoco/org.jacoco.core/0.8.8/org.jacoco.core-0.8.8.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm-commons/9.2/asm-commons-9.2.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm-analysis/9.2/asm-analysis-9.2.jar:/home/ygriegasb/.m2/repository/org/ow2/asm/asm-tree/9.2/asm-tree-9.2.jar:/home/ygriegasb/.m2/repository/org/jacoco/org.jacoco.report/0.8.8/org.jacoco.report-0.8.8.jar:/home/ygriegasb/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar:/home/ygriegasb/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/home/ygriegasb/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/home/ygriegasb/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/home/ygriegasb/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/home/ygriegasb/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/home/ygriegasb/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/home/ygriegasb/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/home/ygriegasb/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/home/ygriegasb/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/home/ygriegasb/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/home/ygriegasb/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/home/ygriegasb/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/home/ygriegasb/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/home/ygriegasb/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/home/ygriegasb/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/home/ygriegasb/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/home/ygriegasb/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/home/ygriegasb/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar:/home/ygriegasb/.m2/repository/io/reactivex/rxjava3/rxjava/3.0.4/rxjava-3.0.4.jar:/home/ygriegasb/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/ygriegasb/.m2/repository/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar:/home/ygriegasb/.m2/repository/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar:/home/ygriegasb/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/home/ygriegasb/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ygriegasb/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/home/ygriegasb/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/home/ygriegasb/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/home/ygriegasb/.m2/repository/org/junit/vintage/junit-vintage-engine/5.9.2/junit-vintage-engine-5.9.2.jar:/home/ygriegasb/.m2/repository/ch/qos/logback/logback-classic/1.2.6/logback-classic-1.2.6.jar:/home/ygriegasb/.m2/repository/ch/qos/logback/logback-core/1.2.6/logback-core-1.2.6.jar:/home/ygriegasb/.m2/repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ygriegasb"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/opt/jdk-11.0.21"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion/target/surefire/surefirebooter10065346962699893055.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.21+9-LTS-193"/>
+    <property name="user.name" value="ygriegasb"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.6.10-76060610-generic"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/home/ygriegasb/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2023.3.2"/>
+    <property name="java.version" value="11.0.21"/>
+    <property name="user.dir" value="/home/ygriegasb/Downloads/PruebaTecnicaQA - Vidal Martinez/Automatizacion"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.21+9-LTS-193"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="Reproducir contenido" classname="Runner.TestRunner" time="4.398">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@ReproducirContenido @Prueba
+Scenario: Reproducir contenido             # src/test/resources/Feature/PruebaQA/Videojs.feature:4
+15:18:08.246 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:08.259 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"       # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se reproduce el video               # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  Then Se valida que el video se reproduce # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+15:18:08.279 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Reproducir video en pantalla completa" classname="Runner.TestRunner" time="3.042">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@PantallaCompleta @Prueba
+Scenario: Reproducir video en pantalla completa       # src/test/resources/Feature/PruebaQA/Videojs.feature:10
+15:18:11.355 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:11.357 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"                  # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se selecciona un video sub de la lista         # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_un_video_sub_de_la_lista()
+  And Se reproduce el video                           # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce             # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se selecciona modo pantalla completa            # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seSeleccionaModoPantallaCompleta()
+  Then Se valida la reproduccion en pantalla completa # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seValidaLaReproduccionEnPantallaCompleta()
+15:18:11.365 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Reproducir video completo" classname="Runner.TestRunner" time="3.05">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@ReproducirContenido @Prueba
+Scenario: Reproducir video completo       # src/test/resources/Feature/PruebaQA/Videojs.feature:19
+15:18:14.394 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:14.401 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"      # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se reproduce el video              # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  Then Se espera a que el video finalice  # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seEsperaAQueElVideoFinalice()
+15:18:14.415 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Reproducir contenido de la lista" classname="Runner.TestRunner" time="3.036">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@ReproducirVideoDeLaLista @Prueba
+Scenario: Reproducir contenido de la lista       # src/test/resources/Feature/PruebaQA/Videojs.feature:26
+15:18:17.444 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:17.444 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"             # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se selecciona siguiente video de la lista # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_siguiente_video_de_la_lista()
+  And Se reproduce el video                      # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  Then Se valida que el video se reproduce       # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+15:18:17.448 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Silenciar el reproductor" classname="Runner.TestRunner" time="3.047">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@SilenciarVideo @Prueba
+Scenario: Silenciar el reproductor            # src/test/resources/Feature/PruebaQA/Videojs.feature:33
+15:18:20.486 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:20.486 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"          # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se reproduce el video                  # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce     # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se silencia el video                    # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_silencia_el_video()
+  Then Se valida que el video esta silenciado # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_esta_silenciado()
+  And Se reactiva el audio del video          # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reactiva_el_audio_del_video()
+15:18:20.490 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Seleccionar subtitiulos" classname="Runner.TestRunner" time="3.039">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@SubVideo @Prueba
+Scenario: Seleccionar subtitiulos                  # src/test/resources/Feature/PruebaQA/Videojs.feature:42
+15:18:23.529 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:23.530 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"               # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se selecciona un video sub de la lista      # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_un_video_sub_de_la_lista()
+  And Se reproduce el video                        # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce          # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se selecciona idioma "Russian" de subtitulos # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_idioma_de_subtitulos(java.lang.String)
+  Then Se valida el idioma seleccionado "Russian"  # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_el_idioma_seleccionado(java.lang.String)
+15:18:23.533 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Seleccionar Audio Descriptivo" classname="Runner.TestRunner" time="3.023">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@AudioDescriptivo @Prueba
+Scenario: Seleccionar Audio Descriptivo             # src/test/resources/Feature/PruebaQA/Videojs.feature:51
+15:18:26.557 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:26.558 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"                # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se selecciona un video sub de la lista       # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_un_video_sub_de_la_lista()
+  And Se reproduce el video                         # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce           # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se selecciona Audio descriptivo               # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seSeleccionaAudioDescriptivo()
+  Then Se valida la seleccion del Audio descriptivo # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seValidaLaSeleccionDelAudioDescriptivo()
+15:18:26.561 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Seleccionar modo PIP" classname="Runner.TestRunner" time="3.053">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@ModoPIP @Prueba
+Scenario: Seleccionar modo PIP                              # src/test/resources/Feature/PruebaQA/Videojs.feature:60
+15:18:29.593 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:29.594 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"                        # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se selecciona un video sub de la lista               # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_un_video_sub_de_la_lista()
+  And Se reproduce el video                                 # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce                   # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se selecciona modo ventana picture in picture         # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seSeleccionaModoVentanaPictureInPicture()
+  Then Se valida la reproduccion en modo picture in picture # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seValidaLaReproduccionEnModoPictureInPicture()
+15:18:29.606 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Volver a reproducir el video" classname="Runner.TestRunner" time="3.027">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@Replay @Prueba
+Scenario: Volver a reproducir el video     # src/test/resources/Feature/PruebaQA/Videojs.feature:69
+15:18:32.638 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:32.639 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"       # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se reproduce el video               # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce  # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se espera a que el video finalice    # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seEsperaAQueElVideoFinalice()
+  And Se vuelve a reproducir el video      # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seVuelveAReproducirElVideo()
+  Then Se valida que el video se reproduce # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+15:18:32.641 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+  <testcase name="Seleccionar chapters" classname="Runner.TestRunner" time="3.016">
+    <failure message="Multiple Failures (2 failures)&#10;	java.lang.NullPointerException: &lt;no message&gt;&#10;	java.lang.NullPointerException: &lt;no message&gt;" type="org.opentest4j.MultipleFailuresError"><![CDATA[org.opentest4j.MultipleFailuresError: 
+Multiple Failures (2 failures)
+	java.lang.NullPointerException: <no message>
+	java.lang.NullPointerException: <no message>
+]]></failure>
+    <system-out><![CDATA[
+@Chapters @Prueba
+Scenario: Seleccionar chapters                        # src/test/resources/Feature/PruebaQA/Videojs.feature:78
+15:18:35.655 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+15:18:35.656 [main] INFO  Utl.Utilidades - Environment: null
+      java.lang.NullPointerException
+	at Utl.Utilidades.getEnv(Utilidades.java:70)
+	at StepDefinition.Hooks.Hooks.beforeScenario(Hooks.java:19)
+
+  Given Carga sitio web de "VIDEOJS"                  # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.carga_sitio_web_de(java.lang.String)
+  When Se selecciona un video sub de la lista         # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_selecciona_un_video_sub_de_la_lista()
+  And Se reproduce el video                           # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_reproduce_el_video()
+  And Se valida que el video se reproduce             # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.se_valida_que_el_video_se_reproduce()
+  And Se selecciona chapter "Typewriter"              # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seSeleccionaChapter(java.lang.String)
+  Then Se valida el chapter seleccionado "Typewriter" # StepDefinition.PruebaQAStepDefinition.VideojsStepDefinition.seValidaElChapterSeleccionado(java.lang.String)
+15:18:35.659 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+      java.lang.NullPointerException
+	at StepDefinition.Hooks.Hooks.Close(Hooks.java:37)
+
+]]></system-out>
+  </testcase>
+</testsuite>
