@@ -4,6 +4,7 @@ pipeline{
     stages {
         stage("RunTest"){
             steps {
+                sh "ls -la"
                 sh "mvn clean test -Dcucumber.filter.tags=${tags}"
             }
         }
