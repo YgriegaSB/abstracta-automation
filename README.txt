@@ -20,12 +20,3 @@ Para ejecutar el proyecto es necesario abrir una terminal dentro de la carpeta "
 
 mvn test -Dcucumber.filter.tags=@Prueba
 
-
------------------------------------------------------------------------------------------------------
-
-CONSULTA API
-
-Para ejecutar es necesario
-- Postman
-
-Se debe importar la coleccion que tiene extencion ".postman_collection" a postman y se podran ejecutar las consultas.
