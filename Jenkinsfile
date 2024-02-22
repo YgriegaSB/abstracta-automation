@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage("RunTest") {
             steps {
+                sh "export ENVIRONMENT=PRODUCTION"
                 sh "mvn clean test -Dcucumber.filter.tags='${tags}'"
             }
         }
