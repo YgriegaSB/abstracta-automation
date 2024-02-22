@@ -34,6 +34,12 @@ public class AbstractaPage extends basePage {
     @FindBy(xpath = "//div[@id='tab-description']/p")
     private WebElement textDescriptionProduct;
 
+    @FindBy(xpath = "//div[@class='col-sm-4']/ul[2]/li[1]")
+    private WebElement productPrice;
+
+    @FindBy(xpath = "//div[@class='col-sm-4']/ul[1]/li[2]")
+    private WebElement productCode;
+
     @FindBy(xpath = "//div[@id='product']//descendant::button")
     private WebElement btnAddToCart;
 
@@ -50,19 +56,13 @@ public class AbstractaPage extends basePage {
     private WebElement titleModuleCart;
 
     @FindBy(xpath = "//div[@id='content']//following-sibling::td[2]/a")
-    private WebElement textProductName;
+    private WebElement cartProductName;
 
     @FindBy(xpath = "//div[@id='content']//following-sibling::tr[3]/td[2]")
-    private WebElement textProductPrice;
-
-    @FindBy(xpath = "//div[@class='col-sm-4']/ul[2]/li[1]")
-    private WebElement productPrice;
+    private WebElement cartProductPrice;
 
     @FindBy(xpath = "//div[@id='content']//descendant::tbody/tr/td[3]")
     private WebElement cartProductCode;
-
-    @FindBy(xpath = "//div[@class='col-sm-4']/ul[1]/li[2]")
-    private WebElement productCode;
 
     @FindBy(xpath = "//div[@id='content']//following-sibling::span/button[2]")
     private WebElement btnRemoveFromCart;
@@ -167,8 +167,8 @@ public class AbstractaPage extends basePage {
 
     public String getTextProductPrice() throws Exception {
         try {
-            waitUntilElementIsVisible(textProductPrice);
-            return textProductPrice.getText();
+            waitUntilElementIsVisible(cartProductPrice);
+            return cartProductPrice.getText();
         }catch (ExceptionPage e){
             throw new ExceptionPage(e.getMessage());
         }catch (Exception e) {
@@ -313,8 +313,8 @@ public class AbstractaPage extends basePage {
 
     public String getTextProductName() throws Exception {
         try {
-            waitUntilElementIsVisible(textProductName);
-            return textProductName.getText();
+            waitUntilElementIsVisible(cartProductName);
+            return cartProductName.getText();
         }catch (ExceptionPage e){
             throw new ExceptionPage(e.getMessage());
         }catch (Exception e) {
