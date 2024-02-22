@@ -95,10 +95,10 @@ public class AbstractaStepDefinition {
         String archivo = "";
         try {
             abstractaPage.clickBtnProductName();
-            if (!abstractaPage.isVisibleDescriptionProduct() || !abstractaPage.getTextDescriptionProduct().toLowerCase().contains(product.toLowerCase())) {
+            if (!abstractaPage.isVisibleProductCode()) {
                 throw new ExceptionPage("No se pudo encontrar la descripción del producto");
             }
-            logger.info("Se abrió la vista del producto '" + product + "' y se visualiza la descripción");
+            logger.info("Se abrió la vista del producto");
             context.setContextData("Precio", abstractaPage.getProductPrice());
             context.setContextData("Codigo", abstractaPage.getProductCode());
             estado = "_OK_";
@@ -174,7 +174,7 @@ public class AbstractaStepDefinition {
     }
 
 
-    @Then("se valida que el producto seleccionado se encuentra en el carrito")
+    @Then("Se valida que el producto seleccionado se encuentra en el carrito")
     public void validarQueElProductoSeleccionadoSeEncuentraEnElCarritoDeCompras() throws Exception {
         String product = context.getContextData("Producto");
         String code = context.getContextData("Codigo");
@@ -182,7 +182,8 @@ public class AbstractaStepDefinition {
         String estado = "";
         String archivo = "";
         try {
-            String productName = abstractaPage.getTextProductName().toLowerCase();
+            System.out.println("PRODUCTO ====================> "+abstractaPage.getCartProductName().toLowerCase());
+            String productName = abstractaPage.getCartProductName().toLowerCase();
             String productCode = abstractaPage.getcartProductCode().toLowerCase();
             if (!productName.equalsIgnoreCase(product) && !code.toLowerCase().contains(productCode)) {
                 throw new ExceptionPage("El producto no fue agregado al carrito");
@@ -204,7 +205,7 @@ public class AbstractaStepDefinition {
     }
 
 
-    @And("se elimina el producto del carrito")
+    @And("Se elimina el producto del carrito")
     public void seEliminaElProductoDelCarrito() throws Exception {
         String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
         String estado = "";
@@ -233,7 +234,7 @@ public class AbstractaStepDefinition {
     }
 
 
-    @And("se valida el mensaje {string}")
+    @And("Se valida el mensaje {string}")
     public void seValidaElMensaje(String message) throws Exception {
     String status = context.getContextData("statusCart");
     String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
@@ -260,4 +261,29 @@ public class AbstractaStepDefinition {
     }
 }
 
+    @And("Se valida que se vea la descripcion del producto")
+    public void seValidaQueSeVeaLaDescripcionDelProducto() throws Exception {
+        String product = context.getContextData("Producto");
+        String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
+        String estado = "";
+        String archivo = "";
+        try {
+            if (!abstractaPage.isVisibleDescriptionProduct() || !abstractaPage.getTextDescriptionProduct().toLowerCase().contains(product.toLowerCase())) {
+                throw new ExceptionPage("No se pudo encontrar la descripción del producto");
+            }
+            logger.info("Se abrió la vista del producto '" + product + "' y se visualiza la descripción");
+            estado = "_OK_";
+            archivo = Utilidades.takeSnapShot("/" + ScenarioContext.getInstance().step().toString() + name + ".png");
+        } catch (ExceptionPage e) {
+            estado = "_NOOK_";
+            logger.error("Error técnico al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Técnico: " + e.getMessage());
+        } catch (Exception e) {
+            estado = "_NOOK_";
+            logger.error("Error funcional al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Funcional: " + e.getMessage());
+        } finally {
+            Utilidades.renameSnapShot(archivo, estado);
+        }
+    }
 }

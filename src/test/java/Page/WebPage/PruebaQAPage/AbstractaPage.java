@@ -209,6 +209,17 @@ public class AbstractaPage extends basePage {
         }
     }
 
+    public boolean isVisibleProductCode() throws Exception {
+        try {
+            waitUntilElementIsVisible(productCode);
+            return isVisible(productCode);
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
     public String getcartProductCode() throws Exception {
         try {
             waitUntilElementIsVisible(cartProductCode);
@@ -311,7 +322,7 @@ public class AbstractaPage extends basePage {
         }
     }
 
-    public String getTextProductName() throws Exception {
+    public String getCartProductName() throws Exception {
         try {
             waitUntilElementIsVisible(cartProductName);
             return cartProductName.getText();
