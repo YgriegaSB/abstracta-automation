@@ -182,7 +182,6 @@ public class AbstractaStepDefinition {
         String estado = "";
         String archivo = "";
         try {
-            System.out.println("PRODUCTO ====================> "+abstractaPage.getCartProductName().toLowerCase());
             String productName = abstractaPage.getCartProductName().toLowerCase();
             String productCode = abstractaPage.getcartProductCode().toLowerCase();
             if (!productName.equalsIgnoreCase(product) && !code.toLowerCase().contains(productCode)) {
