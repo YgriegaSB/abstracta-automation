@@ -52,11 +52,17 @@ public class AbstractaPage extends basePage {
     @FindBy(xpath = "//div[@id='content']//following-sibling::td[2]/a")
     private WebElement textProductName;
 
-    @FindBy(xpath = "//div[@id='content']//following-sibling::li/h2")
+    @FindBy(xpath = "//div[@id='content']//following-sibling::tr[3]/td[2]")
     private WebElement textProductPrice;
 
-    @FindBy(xpath = "//div[@id='content']//following-sibling::li[contains(text(), 'Product Code')]")
-    private WebElement textProductCode;
+    @FindBy(xpath = "//div[@class='col-sm-4']/ul[2]/li[1]")
+    private WebElement productPrice;
+
+    @FindBy(xpath = "//div[@id='content']//descendant::tbody/tr/td[3]")
+    private WebElement cartProductCode;
+
+    @FindBy(xpath = "//div[@class='col-sm-4']/ul[1]/li[2]")
+    private WebElement productCode;
 
     @FindBy(xpath = "//div[@id='content']//following-sibling::span/button[2]")
     private WebElement btnRemoveFromCart;
@@ -170,6 +176,17 @@ public class AbstractaPage extends basePage {
         }
     }
 
+    public String getProductPrice() throws Exception {
+        try {
+            waitUntilElementIsVisible(productPrice);
+            return productPrice.getText();
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
     public boolean isVisibleStatusCartEmpty() throws Exception {
         try {
             waitUntilElementIsVisible(textShoppingCartEmpty);
@@ -192,10 +209,21 @@ public class AbstractaPage extends basePage {
         }
     }
 
-    public String getTextProductCode() throws Exception {
+    public String getcartProductCode() throws Exception {
         try {
-            waitUntilElementIsVisible(textProductCode);
-            return textProductCode.getText();
+            waitUntilElementIsVisible(cartProductCode);
+            return cartProductCode.getText();
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    public String getProductCode() throws Exception {
+        try {
+            waitUntilElementIsVisible(productCode);
+            return productCode.getText();
         }catch (ExceptionPage e){
             throw new ExceptionPage(e.getMessage());
         }catch (Exception e) {
