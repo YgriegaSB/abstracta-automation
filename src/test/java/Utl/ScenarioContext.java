@@ -29,7 +29,7 @@ public class ScenarioContext {
         return (Integer) getContextData("step");
     }
     public String getEnvVariable(String key) throws Exception{
-        HashMap<String,String> env = (HashMap<String, String>) this.data.get("env");
+        Map<String,String> env = (Map<String, String>) this.data.get("env");
         if (!env.containsKey(key)) throw new Exception("Variable de entorno no existe");
         return env.get(key);
     }
