@@ -286,4 +286,29 @@ public class AbstractaStepDefinition {
             Utilidades.renameSnapShot(archivo, estado);
         }
     }
+
+    @And("Se valida que se abre carrito de compras")
+    public void seValidaQueSeAbreCarritoDeCompras() throws Exception {
+        String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
+        String estado = "";
+        String archivo = "";
+        try {
+            if (!abstractaPage.isVisibleTitleModuleCart()) {
+                throw new ExceptionPage("No se pudo encontrar el titulo del carro de compras");
+            }
+            logger.info("Se abrió la vista del carro de compras");
+            estado = "_OK_";
+            archivo = Utilidades.takeSnapShot("/" + ScenarioContext.getInstance().step().toString() + name + ".png");
+        } catch (ExceptionPage e) {
+            estado = "_NOOK_";
+            logger.error("Error técnico al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Técnico: " + e.getMessage());
+        } catch (Exception e) {
+            estado = "_NOOK_";
+            logger.error("Error funcional al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Funcional: " + e.getMessage());
+        } finally {
+            Utilidades.renameSnapShot(archivo, estado);
+        }
+    }
 }

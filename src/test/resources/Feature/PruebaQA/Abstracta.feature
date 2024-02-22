@@ -7,6 +7,15 @@ Feature: PruebaQA
     And Se selecciona el primer producto de la busqueda
     Then Se valida que se vea la descripcion del producto
 
+  @AbrirViewCart @TestAutomation
+  Scenario: Abrir view cart
+    Given Carga sitio web de "ABSTRACTA"
+    When Se busca el producto "iPhone"
+    And Se selecciona el primer producto de la busqueda
+    And Se agrega producto al carrito de compras
+    And Se navega a view cart
+    Then Se valida que se abre carrito de compras
+
   @AgregarProducto @TestAutomation
   Scenario: Agregar producto al Carrito
     Given Carga sitio web de "ABSTRACTA"
