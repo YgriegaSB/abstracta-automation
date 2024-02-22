@@ -4,14 +4,10 @@ pipeline {
     }
     agent any
     stages {
-        stage("SetEnvironment") {
+        stage("RunTest") {
             steps {
                 sh "export ENVIRONMENT=PRODUCTION"
                 sh "export BROWSER=EDGE"
-            }
-        }
-        stage("RunTest") {
-            steps {
                 sh "mvn clean test -Dcucumber.filter.tags='${tags}'"
             }
         }
