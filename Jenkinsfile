@@ -4,7 +4,7 @@ pipeline {
     }
     agent any
     environment {
-        ENVIRONMENT = 'DEVELOPMENT'
+        ENVIRONMENT = 'PRODUCTION'
     }
     stages {
         stage("RunTest") {
