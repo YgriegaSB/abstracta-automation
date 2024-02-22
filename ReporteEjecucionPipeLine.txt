@@ -1,0 +1,247 @@
+Started by user Nicolas
+Obtained Jenkinsfile from git https://github.com/YgriegaSB/abstracta-automation.git
+[Pipeline] Start of Pipeline
+[Pipeline] node
+Running on Jenkins in /var/jenkins_home/workspace/Abstracta
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Abstracta/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/YgriegaSB/abstracta-automation.git # timeout=10
+Fetching upstream changes from https://github.com/YgriegaSB/abstracta-automation.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/YgriegaSB/abstracta-automation.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision e4e99c75eb9cb8ca6a38f8666aa3183db057f772 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e4e99c75eb9cb8ca6a38f8666aa3183db057f772 # timeout=10
+Commit message: "Merge branch 'master' of https://github.com/YgriegaSB/abstracta-automation"
+ > git rev-list --no-walk d70fb3f531b49c56a21b81f7173e79c8295cac7a # timeout=10
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (RunTest)
+[Pipeline] sh
++ mvn clean test -Dcucumber.filter.tags=
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m-------------------------< [0;36mcl:Automatizacion[0;1m >--------------------------[m
+[[1;34mINFO[m] [1mBuilding Automatizacion 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mAutomatizacion[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/jenkins_home/workspace/Abstracta/target
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mAutomatizacion[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/Abstracta/src/main/resources
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:compile[m [1m(default-compile)[m @ [36mAutomatizacion[0;1m ---[m
+[[1;34mINFO[m] No sources to compile
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mAutomatizacion[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 7 resources
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.1:testCompile[m [1m(default-testCompile)[m @ [36mAutomatizacion[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 14 source files to /var/jenkins_home/workspace/Abstracta/target/test-classes
+[[1;34mINFO[m] /var/jenkins_home/workspace/Abstracta/src/test/java/Utl/ScenarioContext.java: Some input files use unchecked or unsafe operations.
+[[1;34mINFO[m] /var/jenkins_home/workspace/Abstracta/src/test/java/Utl/ScenarioContext.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mAutomatizacion[0;1m ---[m
+[[1;34mINFO[m]
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running Runner.[1mTestRunner[m
+
+@BuscarProducto @TestAutomation
+Scenario: Buscar producto y ver descripcion             # src/test/resources/Feature/PruebaQA/Abstracta.feature:4
+21:10:29.100 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+21:10:29.105 [main] INFO  Utl.Utilidades - Environment: PRODUCTION
+21:10:29.107 [main] INFO  Utl.Utilidades - Variables de entorno establecidas
+21:10:30.330 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 121.0.2277.128 (resolved driver for Edge 121)
+21:10:30.354 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as /var/jenkins_home/.cache/selenium/msedgedriver/linux64/121.0.2277.128/msedgedriver
+Starting Microsoft Edge WebDriver 121.0.2277.128 (33d347b6876564520b0f8a52257700ff5eac577f) on port 27515
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+[1708636230.765][SEVERE]: bind(M) faicrosoft Edge WebDriver was started successfully.
+iled: Cannot assign requested address (99)
+Feb 22, 2024 9:10:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 121
+Feb 22, 2024 9:10:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+21:10:31.855 [main] INFO  StepDefinition.Hooks.Hooks - Nombre de escenario: Buscar producto y ver descripcion
+21:10:31.857 [main] INFO  StepDefinition.Hooks.Hooks - Tag: BuscarProducto
+21:10:31.857 [main] INFO  StepDefinition.Hooks.Hooks - Configurando Scenario Context
+21:10:34.631 [main] INFO  S.P.AbstractaStepDefinition - El sitio cargó correctamente
+  Given Carga sitio web de "ABSTRACTA"                  # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.carga_sitio_web_de(java.lang.String)
+21:10:37.679 [main] INFO  S.P.AbstractaStepDefinition - Se realizó la búsqueda del producto 'iPhone' satisfactoriamente
+  When Se busca el producto "iPhone"                    # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seBuscaElProducto(java.lang.String)
+21:10:40.736 [main] INFO  S.P.AbstractaStepDefinition - Se abrió la vista del producto
+  And Se selecciona el primer producto de la busqueda   # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seSeleccionaElPrimerProductoDeLaBusqueda()
+21:10:42.534 [main] INFO  S.P.AbstractaStepDefinition - Se abrió la vista del producto 'iPhone' y se visualiza la descripción
+  Then Se valida que se vea la descripcion del producto # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seValidaQueSeVeaLaDescripcionDelProducto()
+21:10:43.552 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+
+@AbrirViewCart @TestAutomation
+Scenario: Abrir view cart                             # src/test/resources/Feature/PruebaQA/Abstracta.feature:11
+21:10:46.831 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+21:10:46.832 [main] INFO  Utl.Utilidades - Environment: PRODUCTION
+21:10:46.832 [main] INFO  Utl.Utilidades - Variables de entorno establecidas
+21:10:46.863 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 121.0.2277.128 (resolved driver for Edge 121)
+21:10:46.871 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as /var/jenkins_home/.cache/selenium/msedgedriver/linux64/121.0.2277.128/msedgedriver
+Starting Microsoft Edge WebDriver 121.0.2277.128 (33d347b6876564520b0f8a52257700ff5eac577f) on port 11963
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+[1708636246.905][SEVERE]: bind() failed: Cannot assign requested address (99)
+Microsoft Edge WebDriver was started successfully.
+Feb 22, 2024 9:10:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 121
+Feb 22, 2024 9:10:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+21:10:47.290 [main] INFO  StepDefinition.Hooks.Hooks - Nombre de escenario: Abrir view cart
+21:10:47.291 [main] INFO  StepDefinition.Hooks.Hooks - Tag: AbrirViewCart
+21:10:47.292 [main] INFO  StepDefinition.Hooks.Hooks - Configurando Scenario Context
+21:10:50.454 [main] INFO  S.P.AbstractaStepDefinition - El sitio cargó correctamente
+  Given Carga sitio web de "ABSTRACTA"                # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.carga_sitio_web_de(java.lang.String)
+21:10:53.350 [main] INFO  S.P.AbstractaStepDefinition - Se realizó la búsqueda del producto 'iPhone' satisfactoriamente
+  When Se busca el producto "iPhone"                  # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seBuscaElProducto(java.lang.String)
+21:10:56.444 [main] INFO  S.P.AbstractaStepDefinition - Se abrió la vista del producto
+  And Se selecciona el primer producto de la busqueda # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seSeleccionaElPrimerProductoDeLaBusqueda()
+21:10:58.795 [main] INFO  S.P.AbstractaStepDefinition - Se agregó el producto 'iPhone' al carrito de compras
+  And Se agrega producto al carrito de compras        # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seAgregaProductoAlCarritoDeCompras()
+21:11:01.263 [main] INFO  S.P.AbstractaStepDefinition - Se cargó la vista ViewCart correctamente
+  And Se navega a view cart                           # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seNavegaAViewCart()
+21:11:02.336 [main] INFO  S.P.AbstractaStepDefinition - Se abrió la vista del carro de compras
+  Then Se valida que se abre carrito de compras       # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seValidaQueSeAbreCarritoDeCompras()
+21:11:03.229 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+
+@AgregarProducto @TestAutomation
+Scenario: Agregar producto al Carrito                                    # src/test/resources/Feature/PruebaQA/Abstracta.feature:20
+21:11:06.406 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+21:11:06.407 [main] INFO  Utl.Utilidades - Environment: PRODUCTION
+21:11:06.407 [main] INFO  Utl.Utilidades - Variables de entorno establecidas
+21:11:06.432 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 121.0.2277.128 (resolved driver for Edge 121)
+21:11:06.443 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as /var/jenkins_home/.cache/selenium/msedgedriver/linux64/121.0.2277.128/msedgedriver
+Starting Microsoft Edge WebDriver 121.0.2277.128 (33d347b6876564520b0f8a52257700ff5eac577f) on port 26277
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+[1708636266.482][SEVERE]:Micro bisoftnd() f Edgailede WebDriver was started s: Cannot assign reuccessfully.
+quested address (99)
+Feb 22, 2024 9:11:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 121
+Feb 22, 2024 9:11:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+21:11:06.864 [main] INFO  StepDefinition.Hooks.Hooks - Nombre de escenario: Agregar producto al Carrito
+21:11:06.865 [main] INFO  StepDefinition.Hooks.Hooks - Tag: AgregarProducto
+21:11:06.865 [main] INFO  StepDefinition.Hooks.Hooks - Configurando Scenario Context
+21:11:09.767 [main] INFO  S.P.AbstractaStepDefinition - El sitio cargó correctamente
+  Given Carga sitio web de "ABSTRACTA"                                   # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.carga_sitio_web_de(java.lang.String)
+21:11:12.666 [main] INFO  S.P.AbstractaStepDefinition - Se realizó la búsqueda del producto 'iPhone' satisfactoriamente
+  When Se busca el producto "iPhone"                                     # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seBuscaElProducto(java.lang.String)
+21:11:15.402 [main] INFO  S.P.AbstractaStepDefinition - Se abrió la vista del producto
+  And Se selecciona el primer producto de la busqueda                    # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seSeleccionaElPrimerProductoDeLaBusqueda()
+21:11:17.990 [main] INFO  S.P.AbstractaStepDefinition - Se agregó el producto 'iPhone' al carrito de compras
+  And Se agrega producto al carrito de compras                           # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seAgregaProductoAlCarritoDeCompras()
+21:11:20.571 [main] INFO  S.P.AbstractaStepDefinition - Se cargó la vista ViewCart correctamente
+  And Se navega a view cart                                              # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seNavegaAViewCart()
+21:11:21.941 [main] INFO  S.P.AbstractaStepDefinition - El producto 'iPhone' seleccionado se encuentra en el carrito de compras
+  Then Se valida que el producto seleccionado se encuentra en el carrito # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.validarQueElProductoSeleccionadoSeEncuentraEnElCarritoDeCompras()
+21:11:22.883 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+
+@EliminarProducto @TestAutomation
+Scenario: Eliminar producto del carrito                    # src/test/resources/Feature/PruebaQA/Abstracta.feature:29
+21:11:26.079 [main] INFO  Utl.Utilidades - Comprobando el entorno de ejecucion
+21:11:26.080 [main] INFO  Utl.Utilidades - Environment: PRODUCTION
+21:11:26.080 [main] INFO  Utl.Utilidades - Variables de entorno establecidas
+21:11:26.118 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 121.0.2277.128 (resolved driver for Edge 121)
+21:11:26.129 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as /var/jenkins_home/.cache/selenium/msedgedriver/linux64/121.0.2277.128/msedgedriver
+Starting Microsoft Edge WebDriver 121.0.2277.128 (33d347b6876564520b0f8a52257700ff5eac577f) on port 26416
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+[1708636286.168][SEVERE]: bind() failedMicrosoft Edge WebDriver was started successfully.
+: Cannot assign requested address (99)
+Feb 22, 2024 9:11:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 121
+Feb 22, 2024 9:11:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+21:11:26.454 [main] INFO  StepDefinition.Hooks.Hooks - Nombre de escenario: Eliminar producto del carrito
+21:11:26.454 [main] INFO  StepDefinition.Hooks.Hooks - Tag: EliminarProducto
+21:11:26.455 [main] INFO  StepDefinition.Hooks.Hooks - Configurando Scenario Context
+21:11:29.410 [main] INFO  S.P.AbstractaStepDefinition - El sitio cargó correctamente
+  Given Carga sitio web de "ABSTRACTA"                     # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.carga_sitio_web_de(java.lang.String)
+21:11:32.306 [main] INFO  S.P.AbstractaStepDefinition - Se realizó la búsqueda del producto 'iPhone' satisfactoriamente
+  When Se busca el producto "iPhone"                       # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seBuscaElProducto(java.lang.String)
+21:11:35.629 [main] INFO  S.P.AbstractaStepDefinition - Se abrió la vista del producto
+  And Se selecciona el primer producto de la busqueda      # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seSeleccionaElPrimerProductoDeLaBusqueda()
+21:11:38.142 [main] INFO  S.P.AbstractaStepDefinition - Se agregó el producto 'iPhone' al carrito de compras
+  And Se agrega producto al carrito de compras             # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seAgregaProductoAlCarritoDeCompras()
+21:11:40.386 [main] INFO  S.P.AbstractaStepDefinition - Se cargó la vista ViewCart correctamente
+  And Se navega a view cart                                # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seNavegaAViewCart()
+21:11:42.759 [main] INFO  S.P.AbstractaStepDefinition - El producto fue removido del carrito de compras
+  And Se elimina el producto del carrito                   # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seEliminaElProductoDelCarrito()
+21:11:44.508 [main] INFO  S.P.AbstractaStepDefinition - El carrito de compras está vacío. Mensaje validado: Your shopping cart is empty!
+  Then Se valida el mensaje "Your shopping cart is empty!" # StepDefinition.PruebaQAStepDefinition.AbstractaStepDefinition.seValidaElMensaje(java.lang.String)
+21:11:45.490 [main] INFO  StepDefinition.Hooks.Hooks - Cerrando Driver
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+│ Activate publishing with one of the following:                                    │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+│ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+│ JUnit:                                           @CucumberOptions(publish = true) │
+│                                                                                   │
+│ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+│                                                                                   │
+│ Disable this message with one of the following:                                   │
+│                                                                                   │
+│ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+│ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+└───────────────────────────────────────────────────────────────────────────────────┘
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 80.423 s - in Runner.[1mTestRunner[m
+[[1;34mINFO[m]
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1;32mTests run: 4, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:29 min
+[[1;34mINFO[m] Finished at: 2024-02-22T21:11:49Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[0m[0m
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
