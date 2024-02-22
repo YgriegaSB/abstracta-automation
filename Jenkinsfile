@@ -6,6 +6,7 @@ pipeline {
     environment {
         ENVIRONMENT = 'PRODUCTION'
         BROWSER = 'EDGE'
+        ABSTRACTA = 'http://opencart.abstracta.us/'
     }
     stages {
         stage("RunTest") {
