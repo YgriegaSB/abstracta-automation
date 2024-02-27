@@ -1,13 +1,13 @@
 Feature: PruebaQA
 
-  @BuscarProducto @TestAutomation
+  @BuscarProducto @AutomationAbstracta
   Scenario: Buscar producto y ver descripcion
     Given Carga sitio web de "ABSTRACTA"
     When Se busca el producto "iPhone"
     And Se selecciona el primer producto de la busqueda
     Then Se valida que se vea la descripcion del producto
 
-  @AbrirViewCart @TestAutomation
+  @AbrirViewCart @AutomationAbstracta
   Scenario: Abrir view cart
     Given Carga sitio web de "ABSTRACTA"
     When Se busca el producto "iPhone"
@@ -16,7 +16,7 @@ Feature: PruebaQA
     And Se navega a view cart
     Then Se valida que se abre carrito de compras
 
-  @AgregarProducto @TestAutomation
+  @AgregarProducto @AutomationAbstracta
   Scenario: Agregar producto al Carrito
     Given Carga sitio web de "ABSTRACTA"
     When Se busca el producto "iPhone"
@@ -25,7 +25,7 @@ Feature: PruebaQA
     And Se navega a view cart
     Then Se valida que el producto seleccionado se encuentra en el carrito
 
-  @EliminarProducto @TestAutomation
+  @EliminarProducto @AutomationAbstracta
   Scenario: Eliminar producto del carrito
     Given Carga sitio web de "ABSTRACTA"
     When Se busca el producto "iPhone"
