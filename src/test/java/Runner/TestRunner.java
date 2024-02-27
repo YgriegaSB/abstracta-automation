@@ -9,10 +9,12 @@ import org.junit.runner.RunWith;
         features = {
                 "src/test/resources/Feature"
                 },
+        tags = "@TestAutomation",
         glue = {
                 "StepDefinition"
                 },
-        plugin = {"pretty","junit:target/cucumber-reports/report.html","json:target/cucumber-reports/cucumber.json"
+        plugin = {"pretty","junit:target/cucumber-reports/report.html","json:target/cucumber-reports/cucumber.json",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true
 )
