@@ -12,11 +12,10 @@ Con sus variables de entorno establecidas,asi como tambien una variable de entor
 
 (linux)
 export ENVIRONMENT=DEVELOPMENT
-mvn test -Dcucumber.filter.tags=
+mvn test -Dcucumber.filter.tags=@TestAutomation
 
 Esta debe de estar en las variables de entorno del sistema, ya que es la encargada de diferenciar los procesos tanto como para DEV como para PROD.
 
 Para ejecutar el proyecto es necesario abrir una terminal dentro de la carpeta "Automatizacion" y ejecutar el siguiente comando.
 
-mvn test -Dcucumber.filter.tags=
-
+mvn test -Dcucumber.filter.tags=@TestAutomation
