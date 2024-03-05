@@ -10,11 +10,12 @@ Con sus variables de entorno establecidas,asi como tambien una variable de entor
 
 - ENVIRONMENT=DEVELOPMENT
 
+Esta debe de estar en las variables de entorno del sistema *(TOTALMENTE NECESARIO)*, ya que es la encargada de diferenciar los procesos tanto como para DEV como para PROD.
+De lo contrario la ejecucion fallara inmediatamente
+
 (linux)
 export ENVIRONMENT=DEVELOPMENT
 mvn test -Dcucumber.filter.tags=@AutomationAbstracta
-
-Esta debe de estar en las variables de entorno del sistema, ya que es la encargada de diferenciar los procesos tanto como para DEV como para PROD.
 
 Para ejecutar el proyecto es necesario abrir una terminal dentro de la carpeta "Automatizacion" y ejecutar el siguiente comando.
 
