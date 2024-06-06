@@ -2,7 +2,6 @@ package Page.WebPage.PruebaQAPage;
 
 import Page.BasePage.basePage;
 import Page.ExceptionPage.ExceptionPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -73,6 +72,14 @@ public class AbstractaPage extends basePage {
     @FindBy(xpath = "//div[@id='logo']/h1/a")
     private WebElement btnHome;
 
+    @FindBy(xpath = "//nav[@id='menu']/descendant::li/a[contains(text(), 'Components')]")
+    private WebElement btnComponents;
+
+    @FindBy(xpath = "//nav[@id='menu']/descendant::li/a[contains(text(), 'Monitors')]")
+    private WebElement btnMonitors;
+
+    @FindBy(xpath = "//div[@id='content']/h2")
+    private WebElement titleContent;
 
     public boolean isVisibleTextHeader() throws Exception {
         try {
@@ -368,4 +375,62 @@ public class AbstractaPage extends basePage {
         }
     }
 
+    public void clickBtnComponents() throws Exception {
+        try {
+            waitUntilElementIsVisible(btnComponents);
+            if (!btnComponents.isEnabled()) throw new ExceptionPage("Elemento no disponible");
+            btnComponents.click();
+            Thread.sleep(3000);
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    public boolean isVisibleBtnMonitors() throws Exception {
+        try {
+            waitUntilElementIsVisible(btnMonitors);
+            return isVisible(btnMonitors);
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    public void clickBtnMonitors() throws Exception {
+        try {
+            waitUntilElementIsVisible(btnMonitors);
+            if (!btnMonitors.isEnabled()) throw new ExceptionPage("Elemento no disponible");
+            btnMonitors.click();
+            Thread.sleep(5000);
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    public Boolean isVisibleTitleContent() throws Exception {
+        try {
+            waitUntilElementIsVisible(titleContent);
+            return isVisible(titleContent);
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    public String getTitleContent() throws Exception {
+        try {
+            waitUntilElementIsVisible(titleContent);
+            return titleContent.getText();
+        }catch (ExceptionPage e){
+            throw new ExceptionPage(e.getMessage());
+        }catch (Exception e) {
+            throw new Exception(e.getMessage());
+        }
+    }
 }

@@ -33,10 +33,8 @@ public class AbstractaStepDefinition {
             String uri = ScenarioContext.getInstance().getEnvVariable(URL);
             WebDriver driver = context.getContextData("driver");
             driver.navigate().to(uri);
-
-            if (!abstractaPage.isVisibleTextHeader()) {
-                throw new ExceptionPage("El sitio no cargó correctamente");
-            }
+            //Assert.assertTrue(abstractaPage.isVisibleTextHeader());
+            if (!abstractaPage.isVisibleTextHeader()) {throw new ExceptionPage("El sitio no cargó correctamente");}
 
             logger.info("El sitio cargó correctamente");
             estado = "_OK_";
@@ -89,7 +87,6 @@ public class AbstractaStepDefinition {
 
     @And("Se selecciona el primer producto de la busqueda")
     public void seSeleccionaElPrimerProductoDeLaBusqueda() throws Exception {
-        String product = context.getContextData("Producto");
         String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
         String estado = "";
         String archivo = "";
@@ -296,6 +293,82 @@ public class AbstractaStepDefinition {
                 throw new ExceptionPage("No se pudo encontrar el titulo del carro de compras");
             }
             logger.info("Se abrió la vista del carro de compras");
+            estado = "_OK_";
+            archivo = Utilidades.takeSnapShot("/" + ScenarioContext.getInstance().step().toString() + name + ".png");
+        } catch (ExceptionPage e) {
+            estado = "_NOOK_";
+            logger.error("Error técnico al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Técnico: " + e.getMessage());
+        } catch (Exception e) {
+            estado = "_NOOK_";
+            logger.error("Error funcional al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Funcional: " + e.getMessage());
+        } finally {
+            Utilidades.renameSnapShot(archivo, estado);
+        }
+    }
+
+    @When("despliego el menu de {string}")
+    public void despliegoElMenuDe(String menu) throws Exception {
+        String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
+        String estado = "";
+        String archivo = "";
+        try {
+            abstractaPage.clickBtnComponents();
+            if(abstractaPage.isVisibleBtnMonitors()) {
+                throw new ExceptionPage("No se pudo realizar la acción");
+            }
+            logger.info("Se desplego el menu de " + menu);
+            estado = "_OK_";
+            archivo = Utilidades.takeSnapShot("/" + ScenarioContext.getInstance().step().toString() + name + ".png");
+        } catch (ExceptionPage e) {
+            estado = "_NOOK_";
+            logger.error("Error técnico al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Técnico: " + e.getMessage());
+        } catch (Exception e) {
+            estado = "_NOOK_";
+            logger.error("Error funcional al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Funcional: " + e.getMessage());
+        } finally {
+            Utilidades.renameSnapShot(archivo, estado);
+        }
+    }
+
+    @And("selecciono la opcion {string}")
+    public void seleccionoLaOpcion(String submenu) throws Exception {
+        String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
+        String estado = "";
+        String archivo = "";
+        try {
+            if(abstractaPage.isVisibleBtnMonitors()) {
+                throw new ExceptionPage("No se pudo realizar la acción");
+            }
+            abstractaPage.clickBtnMonitors();
+            logger.info("Se hizo click en el submenu" + submenu);
+            estado = "_OK_";
+            archivo = Utilidades.takeSnapShot("/" + ScenarioContext.getInstance().step().toString() + name + ".png");
+        } catch (ExceptionPage e) {
+            estado = "_NOOK_";
+            logger.error("Error técnico al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Técnico: " + e.getMessage());
+        } catch (Exception e) {
+            estado = "_NOOK_";
+            logger.error("Error funcional al seleccionar el primer producto de la búsqueda: " + e.getMessage(), e);
+            throw new Exception("Error Funcional: " + e.getMessage());
+        } finally {
+            Utilidades.renameSnapShot(archivo, estado);
+        }
+    }
+
+    @Then("visualizo la pagina de {string}")
+    public void visualizoLaPaginaDe(String title) throws Exception{
+        String name = "_" + new Object(){}.getClass().getEnclosingMethod().getName();
+        String estado = "";
+        String archivo = "";
+        try {
+            Assert.assertTrue(abstractaPage.isVisibleTitleContent());
+            Assert.assertEquals(title, abstractaPage.getTitleContent());
+            logger.info("Se abrio el submenu " + title);
             estado = "_OK_";
             archivo = Utilidades.takeSnapShot("/" + ScenarioContext.getInstance().step().toString() + name + ".png");
         } catch (ExceptionPage e) {
